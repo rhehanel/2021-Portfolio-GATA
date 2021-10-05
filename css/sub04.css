@@ -1,0 +1,25 @@
+article, .nav, .nav ul{ display: flex; flex-wrap: wrap; }
+article { padding-top: 50px; justify-content:space-around; align-content:flex-end; }
+article h2 { font-size:10em; width:100%; }
+
+section { width:24%; margin-bottom: 2%; }
+section img {
+	width:100%;
+	border:1px solid #333;
+	opacity: 1;
+	transition: all .3s;
+}
+section a:hover img { opacity:.8; }
+
+@media all and (max-width:1200px) {
+	article h2 { font-size:8em; }
+	article .nav {
+		font-size:1.1em;
+	}
+}
+@media all and (max-width:1024px) {
+	section { width:32%; margin-bottom: 2%; }
+	article h2 { font-size:6em; padding-bottom: -20px; }
+}
+@media all and (max-width:768px) { section { width:49%; margin-bottom: 2%; } }
+@media all and (max-width:480px) { article h2 { font-size:6em;} }
